@@ -32,4 +32,5 @@ while True:
     
     except KeyboardInterrupt:
         print('\b\b--- Stopping server on port {} at {} ---'.format(PORT, dt.now()))
+        sock.close()
         exit()
